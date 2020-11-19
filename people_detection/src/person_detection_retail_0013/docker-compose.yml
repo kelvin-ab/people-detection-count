@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build:
+      context: "../../common/web/"
+      dockerfile: "Dockerfile"
+    volumes:
+      - "../../common/db/smart_city.db:/web/smart_city.db"
+    network_mode: "host"
+  pipeline:
+    build:
+      context: .
+      dockerfile: "../../src/person_detection_retail_0013/Dockerfile"
+    volumes:
+      - "/home/kelvin/Videos/Webcam:/app/videos"
+    network_mode: "host"

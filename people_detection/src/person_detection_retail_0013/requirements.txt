@@ -1,0 +1,7 @@
+requests
+numpy
+imutils
+paho-mqtt
+shapely
+scipy
+websocket-client

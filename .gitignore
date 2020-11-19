@@ -1,0 +1,8 @@
+sample_videos/
+**/test/
+.idea
+.git
+test.py
+**/__pycache__
+**/*.pyc
+
